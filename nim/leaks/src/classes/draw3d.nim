@@ -25,5 +25,7 @@ proc line*(T: typedesc[Draw3D]; pos1, pos2: Vector3; color: Color = Color(r:1,g:
   imMesh[].surfaceAddVertex(pos1)
   imMesh[].surfaceAddVertex(pos2)
   imMesh[].surfaceEnd()
-  meshInstance.setMesh(imMesh as GdRef[Mesh])
+  var imMeshRef = imMesh.castTo(gdref Mesh)
+  meshInstance.setMesh(imMeshRef)
+  # meshInstance.setMesh(imMesh as GdRef[Mesh]) #<-- Same issue with this
   return meshInstance
