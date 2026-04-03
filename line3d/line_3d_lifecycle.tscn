@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ct28des0gjrdt"]
+
+[ext_resource type="Script" uid="uid://dxm5v3af7f251" path="res://line3d/tester.gd" id="1_0jji4"]
+
+[node name="Line3DLifecycle" type="Node3D" unique_id=1466403233]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=956381381]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.5)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=241766482]
+transform = Transform3D(1, 0, 0, 0, 0.7880108, 0.6156615, 0, -0.6156615, 0.7880108, 0, 0, 0)
+
+[node name="Tester" type="Node3D" parent="." unique_id=319337874]
+script = ExtResource("1_0jji4")
