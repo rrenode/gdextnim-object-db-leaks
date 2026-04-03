@@ -20,7 +20,7 @@ func _ready() -> void:
 func a() -> void:
 	##==========================================================================
 	## RendererMethod:Forward+ ->
-	## 		ERROR: 3 RID allocations of type 'N17RendererSceneCull8InstanceE' were leaked at exit.
+	## 		ERROR: 1 RID allocations of type 'N17RendererSceneCull8InstanceE' were leaked at exit.
 	##==========================================================================
 	## RendererMethod:Compatability -> 
 	## 		1 RID allocations of type 'N17RendererSceneCull8InstanceE' were leaked at exit.
@@ -35,6 +35,9 @@ func b() -> void:
 	withAdd()
 
 func c() -> void:
+	##==========================================================================
+	## RendererMethod:Forward+ ->
+	## 		ERROR: 3 RID allocations of type 'N17RendererSceneCull8InstanceE' were leaked at exit.
 	##==========================================================================
 	## RendererMethod:Compatability -> 
 	## 		1 RID allocations of type 'N17RendererSceneCull8InstanceE' were leaked at exit.
@@ -53,6 +56,9 @@ func c() -> void:
 	noAdd()
 
 func d() -> void:
+	##==========================================================================
+	## RendererMethod:Forward+ ->
+	## 		ERROR: 3 RID allocations of type 'N17RendererSceneCull8InstanceE' were leaked at exit.
 	##==========================================================================
 	## RendererMethod:Compatability -> 
 	## 		1 RID allocations of type 'N17RendererSceneCull8InstanceE' were leaked at exit.
