@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cw7qrgwhre43w"]
+
+[ext_resource type="Script" uid="uid://bm1w3vg1r8tln" path="res://cprobes/inboundprobe/inboundprobe.gd" id="1_demis"]
+
+[node name="InboundprobeTest" type="Node3D" unique_id=791257170]
+script = ExtResource("1_demis")
+
+[node name="InboundSetterProbe" type="InboundSetterProbe" parent="." unique_id=1471770104]

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dqa30sdebe3sp"]
+
+[ext_resource type="Script" uid="uid://c3xvgj43qjvj5" path="res://cprobes/methodonlyprobe/methodonlyprobe.gd" id="1_8ss0c"]
+
+[node name="MethodonlyprobeTest" type="Node3D" unique_id=774971646]
+script = ExtResource("1_8ss0c")
+
+[node name="MethodOnlyProbe" type="MethodOnlyProbe" parent="." unique_id=766126280]

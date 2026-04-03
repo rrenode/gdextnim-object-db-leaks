@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://d0tr4bbdpfjyd"]
+
+[ext_resource type="Script" uid="uid://t7io20nc81os" path="res://texh/text_h_caller.gd" id="1_gyfwq"]
+
+[node name="TextHCaller" type="Node3D" unique_id=647830511]
+script = ExtResource("1_gyfwq")
+
+[node name="GdRefReturnProbe" type="GdRefReturnProbe" parent="." unique_id=1975814803]

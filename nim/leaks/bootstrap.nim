@@ -1,6 +1,7 @@
 import gdext
 import classes/[
-  draw3d
+  draw3d, gdtexh,
+  propgetonly, methodonly, inboundsetter, roundtrip
 ]
 
 

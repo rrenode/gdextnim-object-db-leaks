@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://c8nf12lr8apkf"]
+
+[node name="RoundtripProbeTest" type="Node3D" unique_id=785230575]
+
+[node name="VariantRoundTripProbe" type="VariantRoundTripProbe" parent="." unique_id=2061678866]

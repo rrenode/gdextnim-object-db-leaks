@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b156eermdcx02"]
+
+[ext_resource type="Script" uid="uid://djqxm4d4pxmfg" path="res://cprobes/gettonlyprobe/gett_only_probe.gd" id="1_mswnt"]
+
+[node name="GettOnlyProbeTest" type="Node3D" unique_id=2030238367]
+script = ExtResource("1_mswnt")
+
+[node name="GetterOnlyProbe" type="GetterOnlyProbe" parent="." unique_id=509127907]
