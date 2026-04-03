@@ -16,5 +16,14 @@ proc makeLineMesh*(T: typedesc[Draw3D]; pos1, pos2: Vector3): gdref ImmediateMes
 
 proc tline*(T: typedesc[Draw3D]; pos1, pos2: Vector3; color: Color = Color(r:1,g:1,b:1)): MeshInstance3D {.gdsync.} =
   var meshInstance = instantiate MeshInstance3D
+  return meshInstance
 
+proc line*(T: typedesc[Draw3D]; pos1, pos2: Vector3; color: Color = Color(r:1,g:1,b:1)): MeshInstance3D {.gdsync.} =
+  var meshInstance = instantiate MeshInstance3D
+  var imMesh: GdRef[ImmediateMesh] = instantiate ImmediateMesh
+  imMesh[].surfaceBegin(primitiveLines)
+  imMesh[].surfaceAddVertex(pos1)
+  imMesh[].surfaceAddVertex(pos2)
+  imMesh[].surfaceEnd()
+  meshInstance.setMesh(imMesh as GdRef[Mesh])
   return meshInstance
