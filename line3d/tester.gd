@@ -18,10 +18,16 @@ func _ready() -> void:
 			e()
 
 func a() -> void:
-	# 1 RID allocations of type 'N17RendererSceneCull8InstanceE' were leaked at exit.
-	# ERROR: Cannot get path of node as it is not in a scene tree.
-	# 	at: (scene/main/node.cpp:2419)
-	# Leaked instance: MeshInstance3D:... - Node path:
+	##==========================================================================
+	## RendererMethod:Forward+ ->
+	## 		ERROR: 3 RID allocations of type 'N17RendererSceneCull8InstanceE' were leaked at exit.
+	##==========================================================================
+	## RendererMethod:Compatability -> 
+	## 		1 RID allocations of type 'N17RendererSceneCull8InstanceE' were leaked at exit.
+	## 		ERROR: Cannot get path of node as it is not in a scene tree.
+	## 			at: (scene/main/node.cpp:2419)
+	## 		Leaked instance: MeshInstance3D:... - Node path:
+	##==========================================================================
 	noAdd()
 
 func b() -> void:
@@ -29,25 +35,31 @@ func b() -> void:
 	withAdd()
 
 func c() -> void:
-	# 3 RID allocations of type 'N17RendererSceneCull8InstanceE' were leaked at exit.
-	# ERROR: Cannot get path of node as it is not in a scene tree.
-	# 	at: (scene/main/node.cpp:2419)
-	# Leaked instance: MeshInstance3D:... - Node path:
-	# ERROR: Cannot get path of node as it is not in a scene tree.
-	# 	at: (scene/main/node.cpp:2419)
-	# Leaked instance: MeshInstance3D:... - Node path:
-	# ERROR: Cannot get path of node as it is not in a scene tree.
-	# 	at: (scene/main/node.cpp:2419)
-	# Leaked instance: MeshInstance3D:... - Node path:
+	##==========================================================================
+	## RendererMethod:Compatability -> 
+	## 		1 RID allocations of type 'N17RendererSceneCull8InstanceE' were leaked at exit.
+	## 		ERROR: Cannot get path of node as it is not in a scene tree.
+	## 			at: (scene/main/node.cpp:2419)
+	## 		Leaked instance: MeshInstance3D:... - Node path:
+	## 		ERROR: Cannot get path of node as it is not in a scene tree.
+	## 			at: (scene/main/node.cpp:2419)
+	## 		Leaked instance: MeshInstance3D:... - Node path:
+	## 		ERROR: Cannot get path of node as it is not in a scene tree.
+	## 			at: (scene/main/node.cpp:2419)
+	## 		Leaked instance: MeshInstance3D:... - Node path:
+	##==========================================================================
 	noAdd()
 	noAdd()
 	noAdd()
 
 func d() -> void:
-	# 1 RID allocations of type 'N17RendererSceneCull8InstanceE' were leaked at exit.
-	# ERROR: Cannot get path of node as it is not in a scene tree.
-	# 	at: (scene/main/node.cpp:2419)
-	# Leaked instance: MeshInstance3D:... - Node path:
+	##==========================================================================
+	## RendererMethod:Compatability -> 
+	## 		1 RID allocations of type 'N17RendererSceneCull8InstanceE' were leaked at exit.
+	## 		ERROR: Cannot get path of node as it is not in a scene tree.
+	## 			at: (scene/main/node.cpp:2419)
+	## 		Leaked instance: MeshInstance3D:... - Node path:
+	##==========================================================================
 	noAddWithNull()
 
 func e() -> void:
