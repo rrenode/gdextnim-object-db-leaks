@@ -12,3 +12,4 @@ transform = Transform3D(1, 0, 0, 0, 0.7880108, 0.6156615, 0, -0.6156615, 0.78801
 
 [node name="Tester" type="Node3D" parent="." unique_id=319337874]
 script = ExtResource("1_0jji4")
+testToRun = 1

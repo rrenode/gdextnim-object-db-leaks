@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://duepyrbnp74e3"]
+
+[ext_resource type="Script" uid="uid://dk8j5py8h10n0" path="res://linemesh3d/tester.gd" id="1_wn1ha"]
+
+[node name="LineImmediateMeshLifecycle" type="Node3D" unique_id=1500718350]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1714729490]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.5)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1550974430]
+transform = Transform3D(1, 0, 0, 0, 0.7880108, 0.6156615, 0, -0.6156615, 0.7880108, 0, 0, 0)
+
+[node name="Tester" type="Node3D" parent="." unique_id=748092708]
+script = ExtResource("1_wn1ha")
+testToRun = 2
+
+[node name="ExistingMesh" type="MeshInstance3D" parent="Tester" unique_id=1633993865]
+unique_name_in_owner = true
