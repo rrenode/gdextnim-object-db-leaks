@@ -100,8 +100,7 @@ func createMeshAndIMeshAndAddChild() -> void:
 	## RendererMethod:Compatability & RendererMethod:Forward+ OnClose -> 
 	## 		No err. Seems good.
 	##==========================================================================
-	## Just closing has no issues...
-	## But if you use remote view you get errors and a crash of the game:
+	## When going into remote view in editor ->
 	##    No stack traceback available
 	##    SIGSEGV: Illegal storage access. (Attempt to read from nil?)
 	##		ERROR: BUG: Unreferenced static string to 0: _request_gizmo_for_id
