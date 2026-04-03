@@ -14,21 +14,15 @@ enum TESTS {
 func _ready() -> void:
 	match testToRun:
 		TESTS.JUST_CREATE:
-			a()
+			justCreate()
 		TESTS.CREATE_ADD_TO_EXISTING_MESH:
-			b()
+			createAndAddToExistingMesh()
 		TESTS.createMeshAndCreateIMesh:
 			createMeshAndCreateIMesh()
 		TESTS.createMeshAndIMeshAndAddChild:
 			createMeshAndIMeshAndAddChild()
 		TESTS.nimCreateLineMeshInstance:
 			nimCreateLineMeshInstance()
-
-func a() -> void:
-	justCreate()
-
-func b() -> void:
-	createAndAddToExistingMesh()
 
 func justCreate() -> void:
 	##==========================================================================
@@ -74,6 +68,7 @@ func createAndAddToExistingMesh() -> void:
 	##			 ~PagedAllocator (./core/templates/paged_allocator.h:169)
 	##==========================================================================
 	var imMesh = Draw3D.makeLineMesh(Vector3(0,0,0), Vector3(0, 4, 0))
+	print(imMesh) #():<ImmediateMesh#-...>
 	existingMesh.mesh = imMesh
 
 func createMeshAndCreateIMesh() -> void:
