@@ -27,5 +27,7 @@ proc line*(T: typedesc[Draw3D]; pos1, pos2: Vector3; color: Color = Color(r:1,g:
   imMesh[].surfaceEnd()
   var imMeshRef = imMesh.castTo(gdref Mesh)
   meshInstance.setMesh(imMeshRef)
+  let back = meshInstance.getMesh()
+  echo "back nil? ", back
   # meshInstance.setMesh(imMesh as GdRef[Mesh]) #<-- Same issue with this
   return meshInstance

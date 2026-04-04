@@ -12,7 +12,7 @@ transform = Transform3D(1, 0, 0, 0, 0.7880108, 0.6156615, 0, -0.6156615, 0.78801
 
 [node name="Tester" type="Node3D" parent="." unique_id=748092708]
 script = ExtResource("1_wn1ha")
-testToRun = 1
+testToRun = 4
 
 [node name="ExistingMesh" type="MeshInstance3D" parent="Tester" unique_id=1633993865]
 unique_name_in_owner = true
