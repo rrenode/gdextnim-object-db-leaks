@@ -1,7 +1,7 @@
 import gdext
 import classes/[
   draw3d, gdtexh,
-  propgetonly, methodonly, inboundsetter, roundtrip
+  propgetonly, methodonly, inboundsetter, roundtrip, mybugnode
 ]
 
 

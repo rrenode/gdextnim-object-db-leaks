@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://1rqiyw8rp3ln"]
+
+[ext_resource type="Script" uid="uid://bp1t04a6cvusy" path="res://mybugnode/b_node_test.gd" id="1_2evok"]
+
+[node name="BNodeTest" type="Node3D" unique_id=2146470172]
+script = ExtResource("1_2evok")
+
+[node name="MyBuggedNode" type="MyBuggedNode" parent="." unique_id=796217097]
