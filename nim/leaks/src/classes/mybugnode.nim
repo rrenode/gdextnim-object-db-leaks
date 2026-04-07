@@ -10,9 +10,12 @@ proc setclsProp(self: MyBuggedNode; v: gdref Texture2D) {.gdsync.} =
   self.clsProp = v
   printRich "WOB: Setting icon texture"
 
+proc getclsProp(self: MyBuggedNode): gdref Texture2D {.gdsync.} =
+  return self.clsProp
+
 gdexport "clsProp",
-  getter= proc(self: MyBuggedNode): gdref Texture2D = self.clsProp,
-  setter= setclsProp
+  getter = getclsProp,
+  setter = setclsProp
 
 method ready(self: MyBuggedNode) {.gdsync.} =
   var resource: gdref Resource = ResourceLoader.load("res://icon.svg")

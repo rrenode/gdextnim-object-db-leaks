@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dgett1447rkuu"]
+
+[ext_resource type="Script" uid="uid://ca71ai3amnva8" path="res://nimReturnsResource/nim_returns_resource_test.gd" id="1_lvt1c"]
+
+[node name="nimReturnsResourceTest" type="Node" unique_id=2034330152]
+script = ExtResource("1_lvt1c")
+
+[node name="ReturnResStates" type="ReturnResStates" parent="." unique_id=131578138]
