@@ -5,6 +5,7 @@ type GdRefReturnProbe* {.gdsync.} = ptr object of Node
   texture*: gdref Texture2D
 
 proc setTexture(self: GdRefReturnProbe; value: gdref Texture2D) {.gdsync.} =
+  discard self.texture[].unreference()
   self.texture = value
 
 proc getTexture(self: GdRefReturnProbe): gdref Texture2D {.gdsync.} =
